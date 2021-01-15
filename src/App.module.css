@@ -1,0 +1,47 @@
+body {
+  background: #15202b;
+  color: white;
+  height: 100vh;
+}
+body * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body .appWrapper {
+  width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+body .appWrapper .appContent {
+  width: 60%;
+  height: 100%;
+  align-self: flex-start;
+  position: absolute;
+  left: 20%;
+  border: 1px solid;
+  border-bottom-color: transparent;
+  border-left-color: #38444d;
+  border-right-color: #38444d;
+  border-top-color: transparent;
+  overflow-y: scroll;
+}
+body .appWrapper .appContent::-webkit-scrollbar-track {
+  background-color: transparent;
+  width: 0;
+  position: absolute;
+}
+body .appWrapper .appContent::-webkit-scrollbar {
+  background-color: transparent;
+  width: 4px;
+  position: absolute;
+}
+body .appWrapper .appContent::-webkit-scrollbar-thumb {
+  position: absolute;
+  background-color: #253341;
+  border-radius: 17px;
+}
+
+/*# sourceMappingURL=App.module.css.map */

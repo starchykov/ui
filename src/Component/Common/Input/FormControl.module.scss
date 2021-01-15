@@ -1,0 +1,80 @@
+input {
+  width: 100%;
+  margin: 20px 0;
+  height: 50px;
+  background: #253341;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  outline: none;
+  color: white;
+  padding: 0 20px;
+  font-size: 18px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+  &:hover {
+    border: 2px solid lightslategrey;
+  }
+
+  &::-webkit-input-placeholder {
+    color: white;
+    opacity: 20%;
+  }
+}
+
+textarea {
+  resize: none;
+  height: auto;
+  max-height: max-content;
+  width: 80%;
+  line-height: 30px;
+  display: flex;
+  border-radius: 16px;
+  outline: none;
+  background: #253341;
+  border: 3px solid transparent;
+  padding: 0 15px 0 15px;
+  color: white;
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+    width: 0;
+    position: absolute;
+  }
+
+  &::-webkit-scrollbar {
+    background-color: transparent;
+    width: 4px;
+    position: absolute;
+    display: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    position: absolute;
+    background-color: #253341;
+    border-radius: 17px;
+  }
+}
+
+.error {
+  border: 2px solid #ca2055;
+}
+
+.LoginForm {
+  text-align: right;
+  width: auto;
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  color: #ca2055;
+  font-weight: bold;
+}
+
+.AddPostForm {
+  position: absolute;
+  display: block;
+  top: -45%;
+  left: 10px;
+  color: #ca2055;
+  font-weight: bold;
+}

@@ -1,0 +1,16 @@
+.inputBlock {
+  display: flex;
+  justify-content: space-between;
+  background: #15202b;
+  position: relative;
+
+  button {
+    width: 17%;
+    height: 30px;
+    border: #1da1f2;
+    background: #1da1f2;
+    outline: none;
+    color: white;
+    border-radius: 16px;
+  }
+}

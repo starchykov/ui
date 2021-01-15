@@ -1,0 +1,54 @@
+body {
+  background: #15202b;
+  color: white;
+  height: 100vh;
+
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .appWrapper {
+    width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    //display: flex;
+    //flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+
+    .appContent {
+      width: 60%;
+      height: 100%;
+      align-self: flex-start;
+      position: absolute;
+      left: 20%;
+      border: 1px solid;
+      border-bottom-color: transparent;
+      border-left-color: rgb(56, 68, 77);
+      border-right-color: rgb(56, 68, 77);
+      border-top-color: transparent;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar-track {
+        background-color: transparent;
+        width: 0;
+        position: absolute;
+      }
+
+      &::-webkit-scrollbar {
+        background-color: transparent;
+        width: 4px;
+        position: absolute;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        position: absolute;
+        background-color: #253341;
+        border-radius: 17px;
+      }
+    }
+
+  }
+}
