@@ -5,6 +5,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   position: relative;
 }
 .header h1 {
@@ -15,14 +16,17 @@
 }
 .header h1:first-of-type {
   position: absolute;
-  left: 0;
+  left: 10px;
 }
 .header h1:last-of-type {
   position: absolute;
-  right: 0;
+  right: 10px;
 }
 .header img {
   height: 100%;
+}
+.header hr {
+  width: 100%;
 }
 
 /*# sourceMappingURL=Header.module.css.map */

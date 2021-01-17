@@ -10,6 +10,7 @@ const Header = () => {
             <h1>Subscribe</h1>
             <Logo/>
             <h1><NavLink to={'/login'} activeClassName={s.active} className={s.menuItem}>Login</NavLink></h1>
+            <hr/>
         </header>
     )
 };

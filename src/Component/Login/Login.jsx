@@ -59,6 +59,7 @@ export const Login = (props) => {
 
     return (
         <div className={s.loginBox}>
+
             <h1>Welcome back</h1>
             <LoginReduxForm onSubmit={onSubmit} {...props}/>
         </div>

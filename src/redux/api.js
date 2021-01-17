@@ -1,10 +1,17 @@
 import React from 'react'
 import * as axios from "axios";
+import qs from 'qs';
 
 const instance = axios.create({
-    baseURL: 'https://starchykov.herokuapp.com/',
+    // baseURL: 'http://starchykov.herokuapp.com/',
+    baseURL: 'http://localhost:8002/',
     withCredentials: true,
-    headers: {}
+    headers: {
+        appID: 8,
+        version: "1.1.0",
+        empID: localStorage.getItem('empID'),
+        token: localStorage.getItem('token')
+    }
 });
 
 

@@ -89,9 +89,13 @@ export const authorize = (props) => (dispatch) => {
 
 export const LoginMe = (data) => (dispatch) => {
     LoginApi.Login(data).then(response => {
-        if (response.status === 200) dispatch(authorize());
+        if (response.status === 200) {
+            dispatch(authorize());
+            localStorage.setItem('token', JSON.stringify(response.data.token));
+            console.log(JSON.parse(localStorage.getItem('token')));
+        }
         else {
-            let responseMessage = response.data.message.length > 0 ? response.message : 'Some error has occurred';
+            let responseMessage = response.message.length > 0 ? response.message : 'Some error has occurred';
             dispatch(stopSubmit('LoginForm', {_error: responseMessage}))
         }
     })
