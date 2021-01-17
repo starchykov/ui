@@ -3,8 +3,8 @@ import * as axios from "axios";
 import qs from 'qs';
 
 const instance = axios.create({
-    // baseURL: 'http://starchykov.herokuapp.com/',
-    baseURL: 'http://localhost:8002/',
+    baseURL: 'http://starchykov.herokuapp.com/',
+    //baseURL: 'http://localhost:8002/',
     withCredentials: true,
     headers: {
         appID: 8,
